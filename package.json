@@ -1,0 +1,32 @@
+{
+  "build": {
+    "appId": "com.electron.simpleapp",
+    "productName": "Simple Electron App",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/installer.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "name": "simple-electron-app",
+  "version": "1.0.0",
+  "description": "A basic application to understand electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^9.0.5",
+    "electron-builder": "^22.7.0"
+  }
+}
